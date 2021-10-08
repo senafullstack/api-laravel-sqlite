@@ -47,6 +47,7 @@ class ContaController extends Controller
      */
     public function show(Request $request, string $email)
     {
+        // pega a conta
         $conta = Conta::find($email);
         return response()->json($conta);
     }
